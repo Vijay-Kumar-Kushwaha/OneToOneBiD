@@ -25,7 +25,7 @@ public class Student {
 	private int mobile;
 	
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "student",cascade = CascadeType.ALL)
 	@JoinColumn(name = "sdid")
 	private StudentDetails studentDetails;
 	
